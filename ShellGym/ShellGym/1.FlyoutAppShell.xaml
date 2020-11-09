@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:ShellGym.Controls"
+             xmlns:views="clr-namespace:ShellGym.Views"
+             mc:Ignorable="d"
+             x:Class="ShellGym.FlyoutAppShell">
+
+    <Shell.FlyoutHeader>
+        <controls:FlyoutHeader />
+    </Shell.FlyoutHeader>
+
+<!--************** Ex.1 **************-->
+     <!--<FlyoutItem Title="Cats" Icon="cat.png">
+        <Tab>
+            <ShellContent>
+                <views:CatsPage />
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Dogs" Icon="dog.png">
+        <Tab>
+            <ShellContent>
+                <views:DogsPage />
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>-->
+
+<!--************** Ex.2 Kan forenkles til **************-->
+    <!--<FlyoutItem Title="Cats" Icon="cat.png">
+        <views:CatsPage />
+    </FlyoutItem>
+    <FlyoutItem Title="Dogs" Icon="dog.png">
+        <views:DogsPage />
+    </FlyoutItem>-->
+
+<!--************** Ex.3 To niveauer kræver bottomtabs **************-->
+    <!--<FlyoutItem Title="Cats" Icon="cat.png">
+        <views:CatsPage Title="Cats" Icon="cat.png" />
+        <views:DogsPage Title="Dogs" Icon="dog.png"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Dogs" Icon="dog.png">
+        <views:DogsPage />
+    </FlyoutItem>-->
+
+
+<!-- ************** Ex.4 **************-->
+<!--Tre niveauer kræver både Bottom- og TopTabs-->
+<!--Her benyttes DataTemplate for at opnå dynamisk load af pages-->
+    <FlyoutItem Title="Animals" 
+                FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Domestic" Icon="paw.png">
+            <views:CatsPage Title="Cats" Icon="cat.png" />
+            <views:DogsPage Title="Dogs" Icon="dog.png"/>
+        </Tab>
+        <ShellContent Title="Monkeys"
+                      Icon="monkey.png"
+                      Route="monkeys"
+                      ContentTemplate="{DataTemplate views:MonkeysPage}" />
+        <ShellContent Title="Elephants"
+                      Icon="elephant.png"
+                      ContentTemplate="{DataTemplate views:ElephantsPage}" />
+        <ShellContent Title="Bears"
+                      Icon="bear.png"
+                      ContentTemplate="{DataTemplate views:BearsPage}" />
+    </FlyoutItem>
+
+    <ShellContent Title="About"
+                  Icon="info.png"
+                  ContentTemplate="{DataTemplate views:AboutPage}" />
+
+    <MenuItem Text="Random"
+              IconImageSource="random.png"
+              Command="{Binding RandomCommand}" />
+    <MenuItem Text="Help"
+              IconImageSource="help.png"
+              Command="{Binding HelpCommand}"
+              CommandParameter="https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell" />
+
+</Shell>

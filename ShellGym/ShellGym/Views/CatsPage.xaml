@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ShellGym.Views.CatsPage"
+             Title="Cats">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Cats!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="btnNavigateToAbout" Text="Navigate to //about"  Clicked="btnNavigateToAbout_Clicked"/>
+            <Button x:Name="btnNavigateToDogs" Text="Navigate to //animals/domestic/dogs" Clicked="btnNavigateToDogs_Clicked"/>
+            <Label Text="Relativ navigation" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnNavigateToBears" Text="Navigate to Relative routes //bears" Clicked="btnNavigateToBears_Clicked" />
+            <Label Text="Global routes" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnNavigateToDogDetails" Text="Navigate to global route dogdetails" Clicked="btnNavigateToDogDetails_Clicked"/>
+            <Label Text="Parameter" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnNavigateToElephant" Text="//animals/elephants/ElephantDetailPage" Clicked="btnNavigateToElephant_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:ShellGym.Controls"
+             xmlns:views="clr-namespace:ShellGym.Views"
+             mc:Ignorable="d"
+             x:Class="ShellGym.TabsAppShell">
+
+    <!--************** Ex.1 **************-->
+    <!--<TabBar>
+        <Tab Title="Cats" Icon="cat.png">
+            <ShellContent>
+                <views:CatsPage />
+            </ShellContent>
+        </Tab>
+        <Tab Title="Dogs" Icon="dog.png">
+            <ShellContent>
+                <views:DogsPage />
+            </ShellContent>
+        </Tab>
+    </TabBar>-->
+
+    <!--************** Ex.2 Kan forenkles til **************-->
+    <!--<TabBar>
+        <views:CatsPage Title="Cats" IconImageSource="cat.png"/>
+        <views:DogsPage Title="Dogs" IconImageSource="dog.png"/>
+    </TabBar>-->
+
+    <!--************** Ex.3 Bottom and top tabs**************-->
+    <!--<TabBar>
+        <Tab Title="Domestic" Icon="paw.png">
+            <ShellContent Title="Cats">
+                <views:CatsPage />
+            </ShellContent>
+            <ShellContent Title="Dogs">
+                <views:DogsPage />
+            </ShellContent>
+        </Tab>
+        <Tab Title="Monkeys" Icon="monkey.png">
+            <ShellContent>
+                <views:MonkeysPage />
+            </ShellContent>
+        </Tab>
+    </TabBar>-->
+
+    <!--************** Ex.4 Kan forenkles til **************-->
+    <!--<TabBar>
+        <Tab Title="Domestic" Icon="paw.png">
+            <views:CatsPage />
+            <views:DogsPage />
+        </Tab>
+        <views:MonkeysPage IconImageSource="monkey.png" />
+    </TabBar>-->
+
+    <!-- ************** Ex.5 **************-->
+    <!--Her benyttes DataTemplate for at opnå dynamisk load af pages-->
+    <TabBar>
+        <Tab Title="Domestic"
+             Icon="paw.png">
+            <ShellContent Title="Cats"
+                          Icon="cat.png"
+                          ContentTemplate="{DataTemplate views:CatsPage}" />
+            <ShellContent Title="Dogs"
+                          Icon="dog.png"
+                          ContentTemplate="{DataTemplate views:DogsPage}" />
+        </Tab>
+        <ShellContent Title="Monkeys"
+                      Icon="monkey.png"
+                      ContentTemplate="{DataTemplate views:MonkeysPage}" />
+    </TabBar>
+
+
+</Shell>
