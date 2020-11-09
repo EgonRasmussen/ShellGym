@@ -13,7 +13,7 @@
     </Shell.FlyoutHeader>
 
 <!--************** Ex.1 **************-->
-     <!--<FlyoutItem Title="Cats" Icon="cat.png">
+     <FlyoutItem Title="Cats" Icon="cat.png">
         <Tab>
             <ShellContent>
                 <views:CatsPage />
@@ -26,7 +26,7 @@
                 <views:DogsPage />
             </ShellContent>
         </Tab>
-    </FlyoutItem>-->
+    </FlyoutItem>
 
 <!--************** Ex.2 Kan forenkles til **************-->
     <!--<FlyoutItem Title="Cats" Icon="cat.png">
@@ -36,7 +36,7 @@
         <views:DogsPage />
     </FlyoutItem>-->
 
-<!--************** Ex.3 To niveauer kræver bottomtabs **************-->
+<!--************** Ex.3 Siebling-Views kræver bottomtabs **************-->
     <!--<FlyoutItem Title="Cats" Icon="cat.png">
         <views:CatsPage Title="Cats" Icon="cat.png" />
         <views:DogsPage Title="Dogs" Icon="dog.png"/>
@@ -47,9 +47,9 @@
 
 
 <!-- ************** Ex.4 **************-->
-<!--Tre niveauer kræver både Bottom- og TopTabs-->
+<!--Sieblings i et dybere niveau kræver både Bottom- og TopTabs-->
 <!--Her benyttes DataTemplate for at opnå dynamisk load af pages-->
-    <FlyoutItem Title="Animals" 
+    <!--<FlyoutItem Title="Animals" 
                 FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="Domestic" Icon="paw.png">
             <views:CatsPage Title="Cats" Icon="cat.png" />
@@ -77,6 +77,6 @@
     <MenuItem Text="Help"
               IconImageSource="help.png"
               Command="{Binding HelpCommand}"
-              CommandParameter="https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell" />
+              CommandParameter="https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell" />-->
 
 </Shell>

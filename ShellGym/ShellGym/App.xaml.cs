@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace ShellGym
 {
@@ -10,9 +8,9 @@ namespace ShellGym
         {
             InitializeComponent();
 
-            //MainPage = new FlyoutAppShell();
+            MainPage = new FlyoutAppShell();
             //MainPage = new TabsAppShell();
-            MainPage = new NavigationAppShell();
+            //MainPage = new NavigationAppShell();
         }
 
         protected override void OnStart()
