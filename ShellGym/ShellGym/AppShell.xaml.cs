@@ -3,16 +3,14 @@ using System;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace ShellGym
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NavigationAppShell : Shell
+    public partial class AppShell : Shell
     {
         Random rand = new Random();
 
-        public NavigationAppShell()
+        public AppShell()
         {
             InitializeComponent();
 

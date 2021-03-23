@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Shell xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:ShellGym.Controls"
-             xmlns:views="clr-namespace:ShellGym.Views"
-             mc:Ignorable="d"
-             x:Class="ShellGym.NavigationAppShell">
+<Shell  xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:ShellGym.Controls"
+        xmlns:views="clr-namespace:ShellGym.Views" 
+        xmlns:shellgym="clr-namespace:ShellGym" 
+        x:DataType="shellgym:AppShell"
+        mc:Ignorable="d"
+        x:Class="ShellGym.AppShell">
 
     <Shell.FlyoutHeader>
         <controls:FlyoutHeader />
