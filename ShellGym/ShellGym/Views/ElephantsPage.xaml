@@ -8,10 +8,9 @@
              Title="Elephants">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to ElephantsPage!"
+            <Label Text="Welcome to Elephants!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button Text="Pass data" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -8,7 +8,7 @@
              Title="Monkeys">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to MonkeysPage"
+            <Label Text="Welcome to Monkeys"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

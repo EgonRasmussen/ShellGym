@@ -2,11 +2,9 @@
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace ShellGym
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FlyoutAppShell : Shell
     {
         Random rand = new Random();
@@ -17,7 +15,6 @@ namespace ShellGym
 
             BindingContext = this;      // nødvendig for at Command binding fungerer
         }
-
 
         public ICommand RandomCommand => new Command(
             async () => await DisplayAlert("Random", $"Dit tal er {rand.Next(0, 9)}", "Ok"));

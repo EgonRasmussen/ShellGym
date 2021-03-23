@@ -10,10 +10,5 @@ namespace ShellGym.Views
         {
             InitializeComponent();
         }
-
-        private async void Button_Clicked(object sender, System.EventArgs e)
-        {           
-            await Shell.Current.GoToAsync("../../cats");    // går to niveauer baglæns og navigerer til cats
-        }
     }
 }

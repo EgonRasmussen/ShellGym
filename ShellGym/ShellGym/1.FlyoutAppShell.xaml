@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Shell xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:ShellGym.Controls"
-             xmlns:views="clr-namespace:ShellGym.Views"
-             mc:Ignorable="d"
-             x:Class="ShellGym.FlyoutAppShell">
+<Shell  xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:ShellGym.Controls"
+        xmlns:views="clr-namespace:ShellGym.Views" 
+        xmlns:shellgym="clr-namespace:ShellGym" 
+        x:DataType="shellgym:FlyoutAppShell"
+        mc:Ignorable="d"
+        x:Class="ShellGym.FlyoutAppShell">
 
     <Shell.FlyoutHeader>
         <controls:FlyoutHeader />
@@ -36,25 +38,38 @@
         <views:DogsPage />
     </FlyoutItem>-->
 
-<!--************** Ex.3 Siebling-Views kræver bottomtabs **************-->
+<!--************** Ex.3 Siebling-Views medfører bottom tabs **************-->
     <!--<FlyoutItem Title="Cats" Icon="cat.png">
         <views:CatsPage Title="Cats" Icon="cat.png" />
         <views:DogsPage Title="Dogs" Icon="dog.png"/>
     </FlyoutItem>
-    <FlyoutItem Title="Dogs" Icon="dog.png">
-        <views:DogsPage />
+    <FlyoutItem Title="Bears" Icon="bear.png">
+        <views:BearsPage />
     </FlyoutItem>-->
 
 
 <!-- ************** Ex.4 **************-->
-<!--Sieblings i et dybere niveau kræver både Bottom- og TopTabs-->
-<!--Her benyttes DataTemplate for at opnå dynamisk load af pages-->
-    <!--<FlyoutItem Title="Animals" 
-                FlyoutDisplayOptions="AsMultipleItems">
+<!--Sieblings i et dybere niveau medfører både Bottom- og TopTabs-->
+    <!--<FlyoutItem Title="Animals" FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="Domestic" Icon="paw.png">
             <views:CatsPage Title="Cats" Icon="cat.png" />
             <views:DogsPage Title="Dogs" Icon="dog.png"/>
+            <views:BearsPage Title="Bears" Icon="bear.png"/>
+        </Tab>
+        <views:MonkeysPage Title="Monkeys" IconImageSource="monkey.png" />
+        <views:MonkeysPage Title="Elephants" IconImageSource="elephant.png" />
+        <views:MonkeysPage Title="Bears" IconImageSource="bear.png" />
+    </FlyoutItem>-->
+
+
+<!-- ************** Ex.5 **************-->
+<!--Her benyttes DataTemplates for at opnå dynamisk load af pages-->
+<!--Desuden benyttes MenuItems-->
+    <!--<FlyoutItem Title="Animals" FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Domestic" Icon="paw.png">
+            <views:CatsPage Title="Cats" Icon="cat.png" />
             <views:DogsPage Title="Dogs" Icon="dog.png"/>
+            <views:BearsPage Title="Bears" Icon="bear.png"/>
         </Tab>
         <ShellContent Title="Monkeys"
                       Icon="monkey.png"
@@ -79,5 +94,4 @@
               IconImageSource="help.png"
               Command="{Binding HelpCommand}"
               CommandParameter="https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell" />-->
-
 </Shell>

@@ -11,14 +11,6 @@
             <Label Text="Welcome to Cats!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button x:Name="btnNavigateToAbout" Text="Navigate to //about"  Clicked="btnNavigateToAbout_Clicked"/>
-            <Button x:Name="btnNavigateToDogs" Text="Navigate to //animals/domestic/dogs" Clicked="btnNavigateToDogs_Clicked"/>
-            <Label Text="Relativ navigation" HorizontalOptions="CenterAndExpand"/>
-            <Button x:Name="btnNavigateToBears" Text="Navigate to Relative routes //bears" Clicked="btnNavigateToBears_Clicked" />
-            <Label Text="Global routes" HorizontalOptions="CenterAndExpand"/>
-            <Button x:Name="btnNavigateToDogDetails" Text="Navigate to global route dogdetails" Clicked="btnNavigateToDogDetails_Clicked"/>
-            <Label Text="Parameter" HorizontalOptions="CenterAndExpand"/>
-            <Button x:Name="btnNavigateToElephant" Text="//animals/elephants/ElephantDetailPage" Clicked="btnNavigateToElephant_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

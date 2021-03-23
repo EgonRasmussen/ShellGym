@@ -11,9 +11,6 @@
             <Label Text="Welcome to Dogs!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button x:Name="btnNavigateBack" 
-                    Clicked="btnNavigateBack_Clicked" 
-                    Text="Go back ../cats"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

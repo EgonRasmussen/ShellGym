@@ -56,9 +56,6 @@
     <Compile Update="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Update="3.NavigationAppShell.xaml.cs">
-      <DependentUpon>3.NavigationAppShell.xaml</DependentUpon>
-    </Compile>
     <Compile Update="2.TabsAppShell.xaml.cs">
       <DependentUpon>2.TabsAppShell.xaml</DependentUpon>
     </Compile>
