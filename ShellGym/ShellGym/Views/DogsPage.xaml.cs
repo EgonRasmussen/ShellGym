@@ -9,7 +9,7 @@ namespace ShellGym.Views
     {
         public DogsPage()
         {
-            InitializeComponent();
+            InitializeComponent();   
         }
 
         private async void btnNavigateBack_Clicked(object sender, EventArgs e)
