@@ -54,6 +54,7 @@
         <Tab Title="Domestic" Icon="paw.png">
             <views:CatsPage Title="Cats" Icon="cat.png" />
             <views:DogsPage Title="Dogs" Icon="dog.png"/>
+            <views:DogsPage Title="Dogs" Icon="dog.png"/>
         </Tab>
         <ShellContent Title="Monkeys"
                       Icon="monkey.png"

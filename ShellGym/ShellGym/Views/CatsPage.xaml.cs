@@ -33,7 +33,7 @@ namespace ShellGym.Views
 
         private async void btnNavigateToElephant_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//animals/elephants/elephantdetails?name=42");
+            await Shell.Current.GoToAsync("//animals/elephants/elephantdetails?name=24");
         }
     }
 }
