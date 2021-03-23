@@ -3,13 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:ShellGym.Controls"
              xmlns:views="clr-namespace:ShellGym.Views"
              mc:Ignorable="d"
-             x:Class="ShellGym.TabsAppShell">
+             x:Class="ShellGym.AppShell">
 
     <!--************** Ex.1 **************-->
-    <!--<TabBar>
+    <TabBar>
         <Tab Title="Cats" Icon="cat.png">
             <ShellContent>
                 <views:CatsPage />
@@ -20,7 +19,7 @@
                 <views:DogsPage />
             </ShellContent>
         </Tab>
-    </TabBar>-->
+    </TabBar>
 
     <!--************** Ex.2 Kan forenkles til **************-->
     <!--<TabBar>
@@ -56,7 +55,7 @@
 
     <!-- ************** Ex.5 **************-->
     <!--Her benyttes DataTemplate for at opnå dynamisk load af pages-->
-    <TabBar>
+    <!--<TabBar>
         <Tab Title="Domestic"
              Icon="paw.png">
             <ShellContent Title="Cats"
@@ -69,6 +68,6 @@
         <ShellContent Title="Monkeys"
                       Icon="monkey.png"
                       ContentTemplate="{DataTemplate views:MonkeysPage}" />
-    </TabBar>
+    </TabBar>-->
 
 </Shell>
