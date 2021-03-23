@@ -8,7 +8,7 @@ namespace ShellGym
         {
             InitializeComponent();
 
-            MainPage = new FlyoutAppShell();
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()

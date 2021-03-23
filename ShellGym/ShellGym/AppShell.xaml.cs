@@ -5,11 +5,11 @@ using Xamarin.Forms;
 
 namespace ShellGym
 {
-    public partial class FlyoutAppShell : Shell
+    public partial class AppShell : Shell
     {
         Random rand = new Random();
 
-        public FlyoutAppShell()
+        public AppShell()
         {
             InitializeComponent();
 

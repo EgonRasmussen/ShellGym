@@ -6,9 +6,9 @@
         xmlns:controls="clr-namespace:ShellGym.Controls"
         xmlns:views="clr-namespace:ShellGym.Views" 
         xmlns:shellgym="clr-namespace:ShellGym" 
-        x:DataType="shellgym:FlyoutAppShell"
+        x:DataType="shellgym:AppShell"
         mc:Ignorable="d"
-        x:Class="ShellGym.FlyoutAppShell">
+        x:Class="ShellGym.AppShell">
 
     <Shell.FlyoutHeader>
         <controls:FlyoutHeader />
