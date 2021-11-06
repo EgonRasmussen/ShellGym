@@ -19,3 +19,4 @@ animals
 about
 ```
 
+Ved demo af Backwards navigation sættes breakpoint i eventhandleren og en Watch = Shell.Current.CurrentItem.

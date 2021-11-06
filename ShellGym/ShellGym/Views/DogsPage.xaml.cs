@@ -14,7 +14,7 @@ namespace ShellGym.Views
 
         private async void btnNavigateBack_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("../cats");            // går et niveau baglæns og sætter Route = cats
+            await Shell.Current.GoToAsync("../cats");            // går et niveau baglæns og sætter Route = cats. Sæt Watch til Shell.Current.CurrentState
         }
     }
 }
