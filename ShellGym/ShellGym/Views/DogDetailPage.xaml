@@ -11,6 +11,9 @@
             <Label Text="Welcome to DogDetaliPage!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="lblPath"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
             <Button Text="Backwards" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>

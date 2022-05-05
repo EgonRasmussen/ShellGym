@@ -1,10 +1,7 @@
-﻿
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace ShellGym.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     [QueryProperty("Name", "name")]
     public partial class ElephantDetailPage : ContentPage
     {
