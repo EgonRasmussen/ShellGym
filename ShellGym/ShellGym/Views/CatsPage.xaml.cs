@@ -17,7 +17,7 @@ namespace ShellGym.Views
             InitializeComponent();
         }
 
-        // Absolute routes
+        // Absolute routes (The // Replaces the navigation stack - no Back button)
         private async void btnNavigateToAbout_Clicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync("//about");
@@ -30,16 +30,17 @@ namespace ShellGym.Views
         private async void btnNavigateToDogs_Clicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync("//animals/domestic/dogs");
-        }    
+        }
 
 
-        // Relative routes
+        // Relative routes (The // Replaces the navigation stack - no Back button)
         private async void btnNavigateToBears_Clicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync("//bears");
         }
 
-        // Global navigation (registrerede routes i App.Shell constructor
+        // Global navigation (registrered routes in App.Shell constructor).  The matching page will be pushed to the navigation stack.
+        // Only route and not //route is allowed.
         private async void btnNavigateToDogDetails_Clicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync("dogdetails");
